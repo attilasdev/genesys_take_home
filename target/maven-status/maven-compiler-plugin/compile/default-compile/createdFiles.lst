@@ -1,1 +1,14 @@
+com/take_home/pages/LoginPage.class
+com/take_home/pages/GuruPage.class
+com/take_home/pages/CheckoutPage.class
+com/take_home/models/User.class
+com/take_home/pages/BasePage.class
+com/take_home/pages/CartPage.class
+com/take_home/utils/ApiUtils.class
+com/take_home/utils/JsonUtils.class
 com/take_home/config/DriverManager.class
+com/take_home/pages/InventoryPage.class
+com/take_home/config/ConfigReader.class
+com/take_home/pages/EditorPage.class
+com/take_home/models/Credentials.class
+com/take_home/utils/WaitUtils.class
