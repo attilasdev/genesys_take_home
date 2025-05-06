@@ -38,4 +38,8 @@ public class BasePage {
         waitForElementVisible(element);
         return element.getText();
     }
+
+    protected void scrollToElement(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true)", element);
+    }
 }
