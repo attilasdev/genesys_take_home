@@ -27,4 +27,12 @@ public class BasePage {
         waitForElementVisible(element);
         element.click();
     }
+
+    protected void sendKeys(WebElement element, String text) {
+        waitForElementVisible(element);
+        element.clear();
+        element.sendKeys(text);
+    }
+
+
 }
