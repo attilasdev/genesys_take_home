@@ -1,0 +1,14 @@
+/home/dev/Developer/genesys_take_home/src/main/java/com/take_home/utils/ApiUtils.java
+/home/dev/Developer/genesys_take_home/src/main/java/com/take_home/models/Credentials.java
+/home/dev/Developer/genesys_take_home/src/main/java/com/take_home/pages/LoginPage.java
+/home/dev/Developer/genesys_take_home/src/main/java/com/take_home/config/DriverManager.java
+/home/dev/Developer/genesys_take_home/src/main/java/com/take_home/config/ConfigReader.java
+/home/dev/Developer/genesys_take_home/src/main/java/com/take_home/pages/GuruPage.java
+/home/dev/Developer/genesys_take_home/src/main/java/com/take_home/pages/EditorPage.java
+/home/dev/Developer/genesys_take_home/src/main/java/com/take_home/models/User.java
+/home/dev/Developer/genesys_take_home/src/main/java/com/take_home/utils/WaitUtils.java
+/home/dev/Developer/genesys_take_home/src/main/java/com/take_home/pages/BasePage.java
+/home/dev/Developer/genesys_take_home/src/main/java/com/take_home/pages/CartPage.java
+/home/dev/Developer/genesys_take_home/src/main/java/com/take_home/pages/CheckoutPage.java
+/home/dev/Developer/genesys_take_home/src/main/java/com/take_home/utils/JsonUtils.java
+/home/dev/Developer/genesys_take_home/src/main/java/com/take_home/pages/InventoryPage.java
