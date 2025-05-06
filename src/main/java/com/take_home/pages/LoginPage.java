@@ -3,7 +3,7 @@ package com.take_home.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage {
+public class LoginPage extends BasePage {
     @FindBy(id = "user-name")
     private WebElement usernameField;
 
@@ -21,4 +21,16 @@ public class LoginPage {
         sendKeys(passwordField, password);
         click(loginButton);
     }
-}
+
+    public void clickLoginButton() {
+        click(loginButton);
+    }
+
+    public String getErrorMessage() {
+        return getText(errorMessage);
+    }
+
+    public void open() {
+        driver.get("https://www.saucedemo.com/");
+    }
+}   
