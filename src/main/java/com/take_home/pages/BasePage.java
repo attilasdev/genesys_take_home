@@ -34,5 +34,8 @@ public class BasePage {
         element.sendKeys(text);
     }
 
-
+    protected String getText(WebElement element) {
+        waitForElementVisible(element);
+        return element.getText();
+    }
 }
