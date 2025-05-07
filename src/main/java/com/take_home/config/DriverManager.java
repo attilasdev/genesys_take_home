@@ -6,8 +6,12 @@ import org.openqa.selenium.firefox.*;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 import java.time.Duration;
+import org.openqa.selenium.PageLoadStrategy;
 
 public class DriverManager {
+
+    private static PageLoadStrategy PAGE_LOAD_STRATEGY = PageLoadStrategy.NORMAL;
+
     private static WebDriver driver;
 
     public static WebDriver getDriver() {
@@ -30,8 +34,9 @@ public class DriverManager {
                 break;
             case "chrome":
                 System.setProperty("webdriver.chrome.driver", driversPath + "/chromedriver");
-                ChromeOptions chromeOptions = new ChromeOptions();  
-                chromeOptions.addArguments("--headless");
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.setPageLoadStrategy(PAGE_LOAD_STRATEGY);
+                //chromeOptions.addArguments("--headless");
                 chromeOptions.addArguments("--no-sandbox");
                 chromeOptions.addArguments("--disable-dev-shm-usage");
                 chromeOptions.addArguments("--window-size=1920,1080");
@@ -48,6 +53,9 @@ public class DriverManager {
             driver.quit();
             driver = null;
         }
+    }
+    public static void setPageLoadStrategy(PageLoadStrategy strategy) {
+        PAGE_LOAD_STRATEGY = strategy;
     }
 }
 
