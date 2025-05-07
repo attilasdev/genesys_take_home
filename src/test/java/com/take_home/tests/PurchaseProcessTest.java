@@ -38,6 +38,6 @@ public class PurchaseProcessTest extends BaseTest {
         checkoutPage.clickFinish();
 
         String confirmationMsg = checkoutPage.getConfirmationMessage();
-        assertEquals("Thank you for your order", confirmationMsg, "Order confirmation message should match.");
+        assertEquals("Thank you for your order!", confirmationMsg, "Order confirmation message should match.");
     }
 }

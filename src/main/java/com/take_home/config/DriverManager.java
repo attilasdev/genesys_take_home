@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.*;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 
 public class DriverManager {
     private static WebDriver driver;
@@ -23,15 +24,23 @@ public class DriverManager {
         switch (browserType.toLowerCase()) {
             case "firefox":
                 System.setProperty("webdriver.gecko.driver", driversPath + "/geckodriver");
-                driver = new FirefoxDriver();
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.addArguments("--headless");
+                driver = new FirefoxDriver(firefoxOptions);
                 break;
             case "chrome":
                 System.setProperty("webdriver.chrome.driver", driversPath + "/chromedriver");
-                driver = new ChromeDriver();
+                ChromeOptions chromeOptions = new ChromeOptions();  
+                chromeOptions.addArguments("--headless");
+                chromeOptions.addArguments("--no-sandbox");
+                chromeOptions.addArguments("--disable-dev-shm-usage");
+                chromeOptions.addArguments("--window-size=1920,1080");
+                chromeOptions.addArguments("--incognito");
+                driver = new ChromeDriver(chromeOptions);
                 break;
         }
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     public static void quitDriver() {
