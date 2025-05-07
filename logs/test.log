@@ -17,3 +17,75 @@ java.net.SocketException: Connection reset
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
 	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+14:13:57.273 [main] ERROR com.take_home.pages.GuruPage - Failed to stop page loading: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=136.0.7103.92)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.167.4-microsoft-standard-WSL2', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ffc1476fb8f759a5feddd57af2659cf, executeScript {script=window.stop();, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.92, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37737}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37737/devtoo..., se:cdpVersion: 136.0.7103.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ffc1476fb8f759a5feddd57af2659cf
+14:14:13.661 [main] WARN  com.take_home.pages.GuruPage - Page elements not fully loaded, continuing anyway
+14:17:07.064 [main] ERROR com.take_home.tests.BaseTest - Failed to handle iframe: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=136.0.7103.92)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.167.4-microsoft-standard-WSL2', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [75c9b6ba952ec04d242e8f4bddacac9e, findElement {using=id, value=a077aa5e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.92, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33331/devtoo..., se:cdpVersion: 136.0.7103.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 75c9b6ba952ec04d242e8f4bddacac9e
+14:17:07.070 [main] ERROR com.take_home.tests.BaseTest - Failed to handle tabs: invalid session id
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.167.4-microsoft-standard-WSL2', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [75c9b6ba952ec04d242e8f4bddacac9e, getWindowHandles {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.92, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33331/devtoo..., se:cdpVersion: 136.0.7103.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 75c9b6ba952ec04d242e8f4bddacac9e
+14:17:07.075 [main] ERROR com.take_home.tests.BaseTest - Email submission failed: invalid session id
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.167.4-microsoft-standard-WSL2', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [75c9b6ba952ec04d242e8f4bddacac9e, findElement {using=xpath, value=//h3[contains(text(), 'Email Submission')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.92, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33331/devtoo..., se:cdpVersion: 136.0.7103.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 75c9b6ba952ec04d242e8f4bddacac9e
+14:19:23.667 [main] INFO  com.take_home.tests.BaseTest - Email submitted
+14:19:23.697 [main] INFO  com.take_home.tests.BaseTest - Alert text: Form Submitted Successfully...
+14:19:26.865 [main] INFO  com.take_home.tests.BaseTest - Navigated to tooltip page
+14:19:26.909 [main] INFO  com.take_home.tests.BaseTest - Download button present: true
+14:19:33.823 [main] INFO  com.take_home.tests.BaseTest - Email submitted
+14:19:33.861 [main] INFO  com.take_home.tests.BaseTest - Alert text: Form Submitted Successfully...
+14:19:39.363 [main] INFO  com.take_home.tests.BaseTest - Navigated to tooltip page
+14:19:39.400 [main] INFO  com.take_home.tests.BaseTest - Download button present: true
+14:23:15.696 [main] INFO  com.take_home.tests.BaseTest - Email submitted
+14:23:15.727 [main] INFO  com.take_home.tests.BaseTest - Alert text: Form Submitted Successfully...
+14:23:20.401 [main] INFO  com.take_home.tests.BaseTest - Navigated to tooltip page
+14:23:20.453 [main] INFO  com.take_home.tests.BaseTest - Download button present: true
+14:25:33.991 [main] INFO  com.take_home.tests.BaseTest - Email submitted
+14:25:34.023 [main] INFO  com.take_home.tests.BaseTest - Alert text: Form Submitted Successfully...
+14:25:39.048 [main] ERROR com.take_home.tests.BaseTest - Navigation to tooltip page failed: timeout: Timed out receiving message from renderer: 5.000
+  (Session info: chrome=136.0.7103.92)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.167.4-microsoft-standard-WSL2', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cd5028360899ad5b41dacf4c3742898e, findElement {using=xpath, value=//a[contains(text(),'Selenium') and contains(@class,'dropdown-toggle')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.92, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33759}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33759/devtoo..., se:cdpVersion: 136.0.7103.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cd5028360899ad5b41dacf4c3742898e
+15:28:37.525 [main] INFO  com.take_home.pages.GuruPage - Switched to iframe by ID
+15:29:16.465 [main] INFO  com.take_home.pages.GuruPage - Switched to iframe by ID
+15:29:50.114 [main] INFO  com.take_home.pages.GuruPage - Switched to iframe by ID
+15:30:09.712 [main] INFO  com.take_home.pages.GuruPage - Switched to iframe by ID
+15:31:27.339 [main] INFO  com.take_home.pages.GuruPage - Switched to iframe by ID
+15:32:02.454 [main] INFO  com.take_home.pages.GuruPage - Switched to iframe by ID
+15:32:03.137 [main] INFO  com.take_home.pages.GuruPage - Clicked iframe image using @FindBy locator
+15:43:07.904 [main] INFO  com.take_home.tests.BaseTest - Leanne Graham | Sincere@april.biz
+15:43:07.905 [main] INFO  com.take_home.tests.BaseTest - Ervin Howell | Shanna@melissa.tv
+15:43:07.905 [main] INFO  com.take_home.tests.BaseTest - Clementine Bauch | Nathan@yesenia.net
+15:43:07.906 [main] INFO  com.take_home.tests.BaseTest - Patricia Lebsack | Julianne.OConner@kory.org
+15:43:07.906 [main] INFO  com.take_home.tests.BaseTest - Chelsey Dietrich | Lucio_Hettinger@annie.ca
+15:43:07.906 [main] INFO  com.take_home.tests.BaseTest - Mrs. Dennis Schulist | Karley_Dach@jasper.info
+15:43:07.906 [main] INFO  com.take_home.tests.BaseTest - Kurtis Weissnat | Telly.Hoeger@billy.biz
+15:43:07.906 [main] INFO  com.take_home.tests.BaseTest - Nicholas Runolfsdottir V | Sherwood@rosamond.me
+15:43:07.906 [main] INFO  com.take_home.tests.BaseTest - Glenna Reichert | Chaim_McDermott@dana.io
+15:43:07.907 [main] INFO  com.take_home.tests.BaseTest - Clementina DuBuque | Rey.Padberg@karina.biz
