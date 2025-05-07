@@ -4,7 +4,7 @@ import com.take_home.pages.GuruPage;
 import org.junit.jupiter.api.Test;
 import com.take_home.config.DriverManager;
 import org.openqa.selenium.PageLoadStrategy;
-
+import org.junit.jupiter.api.DisplayName;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -20,6 +20,7 @@ public class IFrameTabHandlingTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("Case 4 - IFrame and Tab Handling")
     public void testIFrameTabHandling() {
         logStep("Opening Guru99 home page");
         GuruPage guruPage = new GuruPage();

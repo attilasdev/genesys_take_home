@@ -708,3 +708,327 @@ java.net.SocketException: Connection reset
 19:54:51.022 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Footer contains required information
 19:54:51.022 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testErrorMessagesAndFooter() ====
 19:54:51.123 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:03:06.904 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testPurchaseProcess() ====
+20:03:06.907 [main] INFO  com.take_home.config.ConfigReader - Configuration loaded successfully with 9 properties
+20:03:06.907 [main] WARN  com.take_home.config.DriverManager - Invalid page load strategy: normal, using default: {}.
+20:03:06.907 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+20:03:07.110 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:03:07.121 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:03:07.121 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:03:07.896 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:03:07.897 [main] INFO  com.take_home.tests.BaseTest - STEP: Reading credentials from JSON file
+20:03:07.981 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening login page and logging in
+20:03:07.990 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
+20:03:13.712 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding items to cart
+20:03:13.822 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating cart item count
+20:03:13.822 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Cart contains exactly 2 items
+20:03:13.853 [main] INFO  com.take_home.tests.BaseTest - STEP: Proceeding to checkout
+20:03:13.979 [main] INFO  com.take_home.tests.BaseTest - STEP: Completing checkout process
+20:03:14.355 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating order confirmation
+20:03:14.383 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Order confirmation message is correct
+20:03:14.384 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testPurchaseProcess() ====
+20:03:14.486 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:03:14.491 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRichTextEditor() ====
+20:03:14.492 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+20:03:14.497 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:03:14.500 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:03:14.500 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:03:14.887 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:03:14.887 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening rich text editor
+20:03:14.888 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://onlinehtmleditor.dev
+20:03:15.902 [main] INFO  com.take_home.tests.BaseTest - STEP: Applying bold formatting and typing 'Automation'
+20:03:16.732 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding space between formatted texts
+20:03:16.811 [main] INFO  com.take_home.tests.BaseTest - STEP: Applying underline formatting and typing 'Test'
+20:03:17.107 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding final text 'Example'
+20:03:17.202 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating formatted content
+20:03:17.207 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Bold formatting is applied correctly
+20:03:17.208 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Underline formatting is applied correctly
+20:03:17.208 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRichTextEditor() ====
+20:03:17.309 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:03:17.312 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testIFrameTabHandling() ====
+20:03:17.312 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+20:03:17.318 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:03:17.321 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:03:17.322 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:03:17.693 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:03:17.694 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from normal to eager
+20:03:17.795 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:03:17.796 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: eager.
+20:03:17.800 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:03:17.803 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:03:17.803 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:03:18.139 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:03:18.139 [main] INFO  com.take_home.tests.BaseTest - Page load strategy set to EAGER for this test.
+20:03:18.139 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening Guru99 home page
+20:03:18.140 [main] INFO  com.take_home.pages.GuruPage - Opening URL: https://demo.guru99.com/test/guru99home
+20:03:18.652 [main] INFO  com.take_home.tests.BaseTest - STEP: Attempting to interact with iframe
+20:03:18.777 [main] INFO  com.take_home.pages.GuruPage - Switched to iframe by ID
+20:03:19.422 [main] INFO  com.take_home.pages.GuruPage - Clicked iframe image using @FindBy locator
+20:03:19.424 [main] INFO  com.take_home.tests.BaseTest - STEP: Handling new tab after iframe interaction
+20:03:19.435 [main] INFO  com.take_home.pages.GuruPage - Switched to new tab
+20:03:19.436 [main] INFO  com.take_home.pages.GuruPage - Number of tabs open: 2
+20:03:19.495 [main] INFO  com.take_home.pages.GuruPage - Closed tab and switched to main window
+20:03:19.495 [main] INFO  com.take_home.tests.BaseTest - STEP: Submitting email for validation
+20:03:19.740 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating alert message
+20:03:19.764 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Alert text contains 'Successfully'
+20:03:19.765 [main] INFO  com.take_home.tests.BaseTest - STEP: Navigating to tooltip page
+20:03:20.244 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating download button presence
+20:03:20.244 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Download button is present on the page
+20:03:20.277 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from eager to normal
+20:03:20.384 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:03:20.384 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testIFrameTabHandling() ====
+20:03:20.386 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRestApi() ====
+20:03:20.386 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+20:03:20.390 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:03:20.392 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:03:20.392 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:03:20.748 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:03:20.749 [main] INFO  com.take_home.tests.BaseTest - STEP: Sending GET request to users endpoint
+20:03:20.988 [main] INFO  com.take_home.tests.BaseTest - STEP: Parsing response to JSON format
+20:03:20.994 [main] INFO  com.take_home.tests.BaseTest - STEP: Logging user names and emails
+20:03:20.994 [main] INFO  com.take_home.tests.BaseTest - Leanne Graham | Sincere@april.biz
+20:03:20.995 [main] INFO  com.take_home.tests.BaseTest - Ervin Howell | Shanna@melissa.tv
+20:03:20.995 [main] INFO  com.take_home.tests.BaseTest - Clementine Bauch | Nathan@yesenia.net
+20:03:20.995 [main] INFO  com.take_home.tests.BaseTest - Patricia Lebsack | Julianne.OConner@kory.org
+20:03:20.995 [main] INFO  com.take_home.tests.BaseTest - Chelsey Dietrich | Lucio_Hettinger@annie.ca
+20:03:20.995 [main] INFO  com.take_home.tests.BaseTest - Mrs. Dennis Schulist | Karley_Dach@jasper.info
+20:03:20.995 [main] INFO  com.take_home.tests.BaseTest - Kurtis Weissnat | Telly.Hoeger@billy.biz
+20:03:20.996 [main] INFO  com.take_home.tests.BaseTest - Nicholas Runolfsdottir V | Sherwood@rosamond.me
+20:03:20.996 [main] INFO  com.take_home.tests.BaseTest - Glenna Reichert | Chaim_McDermott@dana.io
+20:03:20.996 [main] INFO  com.take_home.tests.BaseTest - Clementina DuBuque | Rey.Padberg@karina.biz
+20:03:20.996 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating email format
+20:03:20.996 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: First user's email contains @ symbol
+20:03:20.997 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRestApi() ====
+20:03:21.098 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:03:21.099 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testErrorMessagesAndFooter() ====
+20:03:21.099 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+20:03:21.104 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:03:21.106 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:03:21.106 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:03:21.441 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:03:21.441 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening login page
+20:03:21.442 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
+20:03:21.864 [main] INFO  com.take_home.tests.BaseTest - STEP: Clicking login button without entering credentials
+20:03:21.944 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating error message
+20:03:21.973 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Error message is displayed correctly
+20:03:21.973 [main] INFO  com.take_home.tests.BaseTest - STEP: Logging in with valid credentials
+20:03:22.206 [main] INFO  com.take_home.tests.BaseTest - STEP: Checking footer text
+20:03:22.241 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Footer contains required information
+20:03:22.242 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testErrorMessagesAndFooter() ====
+20:03:22.343 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:12:44.436 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testPurchaseProcess() ====
+20:12:44.439 [main] INFO  com.take_home.config.ConfigReader - Configuration loaded successfully with 9 properties
+20:12:44.439 [main] WARN  com.take_home.config.DriverManager - Invalid page load strategy: normal, using default: {}.
+20:12:44.439 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+20:12:44.661 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:12:44.672 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:12:44.673 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:12:45.437 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:12:45.442 [main] INFO  com.take_home.tests.BaseTest - STEP: Reading credentials from JSON file
+20:12:45.516 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening login page and logging in
+20:12:45.524 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
+20:12:51.290 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding items to cart
+20:12:51.410 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating cart item count
+20:12:51.410 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Cart contains exactly 2 items
+20:12:51.441 [main] INFO  com.take_home.tests.BaseTest - STEP: Proceeding to checkout
+20:12:51.573 [main] INFO  com.take_home.tests.BaseTest - STEP: Completing checkout process
+20:12:51.953 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating order confirmation
+20:12:51.981 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Order confirmation message is correct
+20:12:51.984 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testPurchaseProcess() ====
+20:12:52.086 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:12:52.091 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRichTextEditor() ====
+20:12:52.091 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+20:12:52.096 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:12:52.100 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:12:52.100 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:12:52.540 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:12:52.540 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening rich text editor
+20:12:52.541 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://onlinehtmleditor.dev
+20:12:53.614 [main] INFO  com.take_home.tests.BaseTest - STEP: Applying bold formatting and typing 'Automation'
+20:12:54.565 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding space between formatted texts
+20:12:54.652 [main] INFO  com.take_home.tests.BaseTest - STEP: Applying underline formatting and typing 'Test'
+20:12:54.928 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding final text 'Example'
+20:12:55.021 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating formatted content
+20:12:55.026 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Bold formatting is applied correctly
+20:12:55.027 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Underline formatting is applied correctly
+20:12:55.027 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRichTextEditor() ====
+20:12:55.128 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:12:55.130 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testIFrameTabHandling() ====
+20:12:55.130 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+20:12:55.136 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:12:55.138 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:12:55.139 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:12:55.553 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:12:55.553 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from normal to eager
+20:12:55.654 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:12:55.654 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: eager.
+20:12:55.659 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:12:55.662 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:12:55.663 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:12:56.084 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:12:56.084 [main] INFO  com.take_home.tests.BaseTest - Page load strategy set to EAGER for this test.
+20:12:56.085 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening Guru99 home page
+20:12:56.086 [main] INFO  com.take_home.pages.GuruPage - Opening URL: https://demo.guru99.com/test/guru99home
+20:12:56.613 [main] INFO  com.take_home.tests.BaseTest - STEP: Attempting to interact with iframe
+20:12:56.687 [main] INFO  com.take_home.pages.GuruPage - Switched to iframe by ID
+20:12:57.367 [main] INFO  com.take_home.pages.GuruPage - Clicked iframe image using @FindBy locator
+20:12:57.370 [main] INFO  com.take_home.tests.BaseTest - STEP: Handling new tab after iframe interaction
+20:12:57.384 [main] INFO  com.take_home.pages.GuruPage - Switched to new tab
+20:12:57.386 [main] INFO  com.take_home.pages.GuruPage - Number of tabs open: 2
+20:12:57.497 [main] INFO  com.take_home.pages.GuruPage - Closed tab and switched to main window
+20:12:57.498 [main] INFO  com.take_home.tests.BaseTest - STEP: Submitting email for validation
+20:12:57.690 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating alert message
+20:12:57.716 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Alert text contains 'Successfully'
+20:12:57.717 [main] INFO  com.take_home.tests.BaseTest - STEP: Navigating to tooltip page
+20:12:58.218 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating download button presence
+20:12:58.219 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Download button is present on the page
+20:12:58.251 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from eager to normal
+20:12:58.352 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:12:58.352 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testIFrameTabHandling() ====
+20:12:58.354 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRestApi() ====
+20:12:58.354 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+20:12:58.358 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:12:58.360 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:12:58.360 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:12:58.768 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:12:58.768 [main] INFO  com.take_home.tests.BaseTest - STEP: Sending GET request to users endpoint
+20:12:59.024 [main] INFO  com.take_home.tests.BaseTest - STEP: Parsing response to JSON format
+20:12:59.030 [main] INFO  com.take_home.tests.BaseTest - STEP: Logging user names and emails
+20:12:59.031 [main] INFO  com.take_home.tests.BaseTest - Leanne Graham | Sincere@april.biz
+20:12:59.031 [main] INFO  com.take_home.tests.BaseTest - Ervin Howell | Shanna@melissa.tv
+20:12:59.031 [main] INFO  com.take_home.tests.BaseTest - Clementine Bauch | Nathan@yesenia.net
+20:12:59.031 [main] INFO  com.take_home.tests.BaseTest - Patricia Lebsack | Julianne.OConner@kory.org
+20:12:59.031 [main] INFO  com.take_home.tests.BaseTest - Chelsey Dietrich | Lucio_Hettinger@annie.ca
+20:12:59.032 [main] INFO  com.take_home.tests.BaseTest - Mrs. Dennis Schulist | Karley_Dach@jasper.info
+20:12:59.032 [main] INFO  com.take_home.tests.BaseTest - Kurtis Weissnat | Telly.Hoeger@billy.biz
+20:12:59.032 [main] INFO  com.take_home.tests.BaseTest - Nicholas Runolfsdottir V | Sherwood@rosamond.me
+20:12:59.032 [main] INFO  com.take_home.tests.BaseTest - Glenna Reichert | Chaim_McDermott@dana.io
+20:12:59.032 [main] INFO  com.take_home.tests.BaseTest - Clementina DuBuque | Rey.Padberg@karina.biz
+20:12:59.032 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating email format
+20:12:59.033 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: First user's email contains @ symbol
+20:12:59.033 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRestApi() ====
+20:12:59.134 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:12:59.136 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testErrorMessagesAndFooter() ====
+20:12:59.136 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+20:12:59.140 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:12:59.142 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:12:59.142 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:12:59.502 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:12:59.502 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening login page
+20:12:59.503 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
+20:12:59.946 [main] INFO  com.take_home.tests.BaseTest - STEP: Clicking login button without entering credentials
+20:13:00.032 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating error message
+20:13:00.063 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Error message is displayed correctly
+20:13:00.063 [main] INFO  com.take_home.tests.BaseTest - STEP: Logging in with valid credentials
+20:13:00.311 [main] INFO  com.take_home.tests.BaseTest - STEP: Checking footer text
+20:13:00.348 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Footer contains required information
+20:13:00.348 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testErrorMessagesAndFooter() ====
+20:13:00.449 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:19:10.043 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: Case 1 - Automate Purchase Process ====
+20:19:10.046 [main] INFO  com.take_home.config.ConfigReader - Configuration loaded successfully with 9 properties
+20:19:10.046 [main] WARN  com.take_home.config.DriverManager - Invalid page load strategy: normal, using default: {}.
+20:19:10.047 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+20:19:10.286 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:19:10.298 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:19:10.298 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:19:11.077 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:19:11.079 [main] INFO  com.take_home.tests.BaseTest - STEP: Reading credentials from JSON file
+20:19:11.187 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening login page and logging in
+20:19:11.197 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
+20:19:16.974 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding items to cart
+20:19:17.092 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating cart item count
+20:19:17.093 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Cart contains exactly 2 items
+20:19:17.124 [main] INFO  com.take_home.tests.BaseTest - STEP: Proceeding to checkout
+20:19:17.257 [main] INFO  com.take_home.tests.BaseTest - STEP: Completing checkout process
+20:19:17.655 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating order confirmation
+20:19:17.684 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Order confirmation message is correct
+20:19:17.686 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: Case 1 - Automate Purchase Process ====
+20:19:17.788 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:19:17.793 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: Case 3 - Rich Text Editor Functionality ====
+20:19:17.793 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+20:19:17.800 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:19:17.806 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:19:17.806 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:19:18.240 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:19:18.240 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening rich text editor
+20:19:18.241 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://onlinehtmleditor.dev
+20:19:19.378 [main] INFO  com.take_home.tests.BaseTest - STEP: Applying bold formatting and typing 'Automation'
+20:19:20.298 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding space between formatted texts
+20:19:20.390 [main] INFO  com.take_home.tests.BaseTest - STEP: Applying underline formatting and typing 'Test'
+20:19:20.696 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding final text 'Example'
+20:19:20.790 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating formatted content
+20:19:20.796 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Bold formatting is applied correctly
+20:19:20.797 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Underline formatting is applied correctly
+20:19:20.797 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: Case 3 - Rich Text Editor Functionality ====
+20:19:20.898 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:19:20.901 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: Case 4 - IFrame and Tab Handling ====
+20:19:20.901 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+20:19:20.908 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:19:20.911 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:19:20.911 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:19:21.324 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:19:21.324 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from normal to eager
+20:19:21.426 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:19:21.427 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: eager.
+20:19:21.433 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:19:21.436 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:19:21.436 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:19:21.787 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:19:21.787 [main] INFO  com.take_home.tests.BaseTest - Page load strategy set to EAGER for this test.
+20:19:21.788 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening Guru99 home page
+20:19:21.789 [main] INFO  com.take_home.pages.GuruPage - Opening URL: https://demo.guru99.com/test/guru99home
+20:19:22.267 [main] INFO  com.take_home.tests.BaseTest - STEP: Attempting to interact with iframe
+20:19:22.393 [main] INFO  com.take_home.pages.GuruPage - Switched to iframe by ID
+20:19:23.032 [main] INFO  com.take_home.pages.GuruPage - Clicked iframe image using @FindBy locator
+20:19:23.035 [main] INFO  com.take_home.tests.BaseTest - STEP: Handling new tab after iframe interaction
+20:19:23.051 [main] INFO  com.take_home.pages.GuruPage - Switched to new tab
+20:19:23.053 [main] INFO  com.take_home.pages.GuruPage - Number of tabs open: 2
+20:19:23.112 [main] INFO  com.take_home.pages.GuruPage - Closed tab and switched to main window
+20:19:23.113 [main] INFO  com.take_home.tests.BaseTest - STEP: Submitting email for validation
+20:19:23.321 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating alert message
+20:19:23.347 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Alert text contains 'Successfully'
+20:19:23.347 [main] INFO  com.take_home.tests.BaseTest - STEP: Navigating to tooltip page
+20:19:23.853 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating download button presence
+20:19:23.853 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Download button is present on the page
+20:19:23.895 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from eager to normal
+20:19:23.996 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:19:23.997 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: Case 4 - IFrame and Tab Handling ====
+20:19:23.998 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: Case 5 - REST API testing ====
+20:19:23.998 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+20:19:24.002 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:19:24.005 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:19:24.005 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:19:24.370 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:19:24.370 [main] INFO  com.take_home.tests.BaseTest - STEP: Sending GET request to users endpoint
+20:19:24.632 [main] INFO  com.take_home.tests.BaseTest - STEP: Parsing response to JSON format
+20:19:24.639 [main] INFO  com.take_home.tests.BaseTest - STEP: Logging user names and emails
+20:19:24.639 [main] INFO  com.take_home.tests.BaseTest - Leanne Graham | Sincere@april.biz
+20:19:24.639 [main] INFO  com.take_home.tests.BaseTest - Ervin Howell | Shanna@melissa.tv
+20:19:24.640 [main] INFO  com.take_home.tests.BaseTest - Clementine Bauch | Nathan@yesenia.net
+20:19:24.640 [main] INFO  com.take_home.tests.BaseTest - Patricia Lebsack | Julianne.OConner@kory.org
+20:19:24.640 [main] INFO  com.take_home.tests.BaseTest - Chelsey Dietrich | Lucio_Hettinger@annie.ca
+20:19:24.640 [main] INFO  com.take_home.tests.BaseTest - Mrs. Dennis Schulist | Karley_Dach@jasper.info
+20:19:24.641 [main] INFO  com.take_home.tests.BaseTest - Kurtis Weissnat | Telly.Hoeger@billy.biz
+20:19:24.641 [main] INFO  com.take_home.tests.BaseTest - Nicholas Runolfsdottir V | Sherwood@rosamond.me
+20:19:24.641 [main] INFO  com.take_home.tests.BaseTest - Glenna Reichert | Chaim_McDermott@dana.io
+20:19:24.641 [main] INFO  com.take_home.tests.BaseTest - Clementina DuBuque | Rey.Padberg@karina.biz
+20:19:24.641 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating email format
+20:19:24.641 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: First user's email contains @ symbol
+20:19:24.642 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: Case 5 - REST API testing ====
+20:19:24.743 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+20:19:24.745 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: Case 2 - Verify error messages and footer text ====
+20:19:24.746 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+20:19:24.750 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+20:19:24.752 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+20:19:24.752 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+20:19:25.137 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+20:19:25.137 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening login page
+20:19:25.137 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
+20:19:25.551 [main] INFO  com.take_home.tests.BaseTest - STEP: Clicking login button without entering credentials
+20:19:25.638 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating error message
+20:19:25.670 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Error message is displayed correctly
+20:19:25.671 [main] INFO  com.take_home.tests.BaseTest - STEP: Logging in with valid credentials
+20:19:25.922 [main] INFO  com.take_home.tests.BaseTest - STEP: Checking footer text
+20:19:25.961 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Footer contains required information
+20:19:25.961 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: Case 2 - Verify error messages and footer text ====
+20:19:26.063 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null

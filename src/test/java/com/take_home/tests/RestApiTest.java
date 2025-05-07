@@ -7,12 +7,13 @@ import com.take_home.utils.ApiUtils;
 import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.util.List;
-
+import org.junit.jupiter.api.DisplayName;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class RestApitTest extends BaseTest {
+public class RestApiTest extends BaseTest {
 
     @Test
+    @DisplayName("Case 5 - REST API testing")
     public void testRestApi() throws IOException {
         logStep("Sending GET request to users endpoint");
         String url = "https://jsonplaceholder.typicode.com/users";

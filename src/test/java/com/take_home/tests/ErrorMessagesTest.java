@@ -4,13 +4,14 @@ import com.take_home.pages.InventoryPage;
 import com.take_home.pages.LoginPage;
 
 import org.junit.jupiter.api.Test;
-
+import org.junit.jupiter.api.DisplayName;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ErrorMessagesTest extends BaseTest {
 
     @Test
+    @DisplayName("Case 2 - Verify error messages and footer text")
     public void testErrorMessagesAndFooter() {
         logStep("Opening login page");
         LoginPage loginPage = new LoginPage();

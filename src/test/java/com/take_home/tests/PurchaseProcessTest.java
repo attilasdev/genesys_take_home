@@ -7,6 +7,7 @@ import com.take_home.pages.InventoryPage;
 import com.take_home.pages.LoginPage;
 import com.take_home.utils.JsonUtils;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.DisplayName;
 import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -14,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PurchaseProcessTest extends BaseTest {
 
     @Test
+    @DisplayName("Case 1 - Automate Purchase Process")
     public void testPurchaseProcess() throws IOException {
         logStep("Reading credentials from JSON file");
         String filePath = getClass().getClassLoader().getResource("credentials.json").getPath();

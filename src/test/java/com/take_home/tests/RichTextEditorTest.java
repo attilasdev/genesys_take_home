@@ -2,12 +2,13 @@ package com.take_home.tests;
 
 import com.take_home.pages.EditorPage;
 import org.junit.jupiter.api.Test;
-
+import org.junit.jupiter.api.DisplayName;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RichTextEditorTest extends BaseTest {
 
     @Test
+    @DisplayName("Case 3 - Rich Text Editor Functionality")
     public void testRichTextEditor() {
         logStep("Opening rich text editor");
         EditorPage editorPage = new EditorPage();
