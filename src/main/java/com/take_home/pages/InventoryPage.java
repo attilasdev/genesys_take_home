@@ -19,4 +19,17 @@ public class InventoryPage extends BasePage {
         WebElement addButton = driver.findElement(By.xpath(xpath));
         click(addButton);
     }
+
+    public void goToCart() {
+        click(cartLink);
+    }
+
+    public int getCartItemCount() {
+        return Integer.parseInt(getText(cartBadge));
+    }
+
+    public String getFooterText() {
+        scrollToElement(footer);
+        return getText(footer);
+    }
 }
