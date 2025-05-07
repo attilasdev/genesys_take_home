@@ -3,9 +3,6 @@ package com.take_home.config;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.*;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 

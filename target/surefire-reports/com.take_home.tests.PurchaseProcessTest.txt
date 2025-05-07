@@ -1,7 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: com.take_home.tests.PurchaseProcessTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.252 s <<< FAILURE! - in com.take_home.tests.PurchaseProcessTest
-testPurchaseProcess  Time elapsed: 0.052 s  <<< ERROR!
-java.lang.NoSuchFieldError: Companion
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 39.834 s <<< FAILURE! - in com.take_home.tests.PurchaseProcessTest
+testPurchaseProcess  Time elapsed: 39.634 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: checkout' (tried for 15 second(s) with 500 milliseconds interval)
+	at com.take_home.tests.PurchaseProcessTest.testPurchaseProcess(PurchaseProcessTest.java:34)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#checkout"}
+  (Session info: chrome=136.0.7103.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.167.4-microsoft-standard-WSL2', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1d84bccc9c3220fed2bc6362d403f52, findElement {using=id, value=checkout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.92, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39999}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39999/devtoo..., se:cdpVersion: 136.0.7103.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a1d84bccc9c3220fed2bc6362d403f52
+	at com.take_home.tests.PurchaseProcessTest.testPurchaseProcess(PurchaseProcessTest.java:34)
 
