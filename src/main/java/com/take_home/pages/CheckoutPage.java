@@ -33,5 +33,7 @@ public class CheckoutPage extends BasePage {
         click(finishButton);
     }
 
-    
+    public String getConfirmationMessage() {
+        return getText(confirmationMessage);
+    }
 }
