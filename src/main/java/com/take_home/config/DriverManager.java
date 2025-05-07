@@ -31,7 +31,7 @@ public class DriverManager {
             case "chrome":
                 System.setProperty("webdriver.chrome.driver", driversPath + "/chromedriver");
                 ChromeOptions chromeOptions = new ChromeOptions();  
-               // chromeOptions.addArguments("--headless");
+                chromeOptions.addArguments("--headless");
                 chromeOptions.addArguments("--no-sandbox");
                 chromeOptions.addArguments("--disable-dev-shm-usage");
                 chromeOptions.addArguments("--window-size=1920,1080");
