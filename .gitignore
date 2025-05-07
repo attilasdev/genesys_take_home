@@ -1,0 +1,26 @@
+# Maven/Build output
+/target/
+*.class
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# Logs
+*.log
+logs/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# WebDriver binaries
+drivers/
+
+# Other test artifacts
+test-output/
+screenshots/
