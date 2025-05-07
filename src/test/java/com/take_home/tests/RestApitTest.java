@@ -11,19 +11,25 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RestApitTest extends BaseTest {
-    
+
     @Test
     public void testRestApi() throws IOException {
+        logStep("Sending GET request to users endpoint");
         String url = "https://jsonplaceholder.typicode.com/users";
         String response = ApiUtils.sendGetRequest(url);
 
+        logStep("Parsing response to JSON format");
         ObjectMapper mapper = new ObjectMapper();
-        List<User> users = mapper.readValue(response, new TypeReference<List<User>>() {});
+        List<User> users = mapper.readValue(response, new TypeReference<List<User>>() {
+        });
 
+        logStep("Logging user names and emails");
         for (User user : users) {
             logger.info("{} | {}", user.getName(), user.getEmail());
         }
 
+        logStep("Validating email format");
+        logValidation("First user's email contains @ symbol");
         assertTrue(users.get(0).getEmail().contains("@"), "Email should contain @ symbol.");
     }
 }

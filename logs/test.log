@@ -235,3 +235,142 @@ java.net.SocketException: Connection reset
 16:16:28.491 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
 16:16:29.287 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testErrorMessagesAndFooter() ====
 16:16:29.388 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+16:32:06.333 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testPurchaseProcess() ====
+16:32:06.337 [main] INFO  com.take_home.config.ConfigReader - Configuration loaded successfully with 9 properties
+16:32:06.337 [main] WARN  com.take_home.config.DriverManager - Invalid page load strategy: normal, using default: {}.
+16:32:06.337 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+16:32:07.321 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+16:32:07.424 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
+16:32:13.895 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testPurchaseProcess() ====
+16:32:13.999 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+16:32:14.003 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+16:32:14.366 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+16:32:14.366 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://onlinehtmleditor.dev
+16:32:16.801 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testIFrameTabHandling() ====
+16:32:16.801 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from normal to eager
+16:32:16.903 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+16:32:16.903 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: eager.
+16:32:17.287 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+16:32:17.287 [main] INFO  com.take_home.tests.BaseTest - Page load strategy set to EAGER for this test.
+16:32:17.288 [main] INFO  com.take_home.pages.GuruPage - Opening URL: https://demo.guru99.com/test/guru99home
+16:32:17.740 [main] INFO  com.take_home.tests.BaseTest - Attempting to interact with iframe.
+16:32:17.857 [main] INFO  com.take_home.pages.GuruPage - Switched to iframe by ID
+16:32:18.494 [main] INFO  com.take_home.pages.GuruPage - Clicked iframe image using @FindBy locator
+16:32:18.508 [main] INFO  com.take_home.pages.GuruPage - Switched to new tab
+16:32:18.509 [main] INFO  com.take_home.pages.GuruPage - Number of tabs open: 2
+16:32:18.519 [main] INFO  com.take_home.pages.GuruPage - Closed tab and switched to main window
+16:32:18.773 [main] INFO  com.take_home.tests.BaseTest - Alert text: Form Submitted Successfully...
+16:32:19.255 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from eager to normal
+16:32:19.356 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+16:32:19.357 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testIFrameTabHandling() ====
+16:32:19.360 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRestApi() ====
+16:32:19.360 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+16:32:19.763 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+16:32:20.198 [main] INFO  com.take_home.tests.BaseTest - Leanne Graham | Sincere@april.biz
+16:32:20.198 [main] INFO  com.take_home.tests.BaseTest - Ervin Howell | Shanna@melissa.tv
+16:32:20.198 [main] INFO  com.take_home.tests.BaseTest - Clementine Bauch | Nathan@yesenia.net
+16:32:20.199 [main] INFO  com.take_home.tests.BaseTest - Patricia Lebsack | Julianne.OConner@kory.org
+16:32:20.199 [main] INFO  com.take_home.tests.BaseTest - Chelsey Dietrich | Lucio_Hettinger@annie.ca
+16:32:20.199 [main] INFO  com.take_home.tests.BaseTest - Mrs. Dennis Schulist | Karley_Dach@jasper.info
+16:32:20.199 [main] INFO  com.take_home.tests.BaseTest - Kurtis Weissnat | Telly.Hoeger@billy.biz
+16:32:20.199 [main] INFO  com.take_home.tests.BaseTest - Nicholas Runolfsdottir V | Sherwood@rosamond.me
+16:32:20.200 [main] INFO  com.take_home.tests.BaseTest - Glenna Reichert | Chaim_McDermott@dana.io
+16:32:20.200 [main] INFO  com.take_home.tests.BaseTest - Clementina DuBuque | Rey.Padberg@karina.biz
+16:32:20.200 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRestApi() ====
+16:32:20.302 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+16:32:20.305 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testErrorMessagesAndFooter() ====
+16:32:20.305 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+16:32:20.664 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+16:32:20.665 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
+16:32:21.492 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testErrorMessagesAndFooter() ====
+16:32:21.593 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+16:41:01.750 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testPurchaseProcess() ====
+16:41:01.752 [main] INFO  com.take_home.config.ConfigReader - Configuration loaded successfully with 9 properties
+16:41:01.752 [main] WARN  com.take_home.config.DriverManager - Invalid page load strategy: normal, using default: {}.
+16:41:01.753 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+16:41:02.538 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+16:41:02.539 [main] INFO  com.take_home.tests.BaseTest - STEP: Reading credentials from JSON file
+16:41:02.623 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening login page and logging in
+16:41:02.633 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
+16:41:08.343 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding items to cart
+16:41:08.459 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating cart item count
+16:41:08.459 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Cart contains exactly 2 items
+16:41:08.490 [main] INFO  com.take_home.tests.BaseTest - STEP: Proceeding to checkout
+16:41:08.624 [main] INFO  com.take_home.tests.BaseTest - STEP: Completing checkout process
+16:41:09.007 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating order confirmation
+16:41:09.035 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Order confirmation message is correct
+16:41:09.038 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testPurchaseProcess() ====
+16:41:09.141 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+16:41:09.147 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRichTextEditor() ====
+16:41:09.147 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+16:41:10.175 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+16:41:10.175 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening rich text editor
+16:41:10.176 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://onlinehtmleditor.dev
+16:41:11.144 [main] INFO  com.take_home.tests.BaseTest - STEP: Applying bold formatting and typing 'Automation'
+16:41:11.971 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding space between formatted texts
+16:41:12.048 [main] INFO  com.take_home.tests.BaseTest - STEP: Applying underline formatting and typing 'Test'
+16:41:12.309 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding final text 'Example'
+16:41:12.397 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating formatted content
+16:41:12.402 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Bold formatting is applied correctly
+16:41:12.402 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Underline formatting is applied correctly
+16:41:12.402 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRichTextEditor() ====
+16:41:12.503 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+16:41:12.505 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testIFrameTabHandling() ====
+16:41:12.506 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+16:41:12.896 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+16:41:12.897 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from normal to eager
+16:41:12.997 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+16:41:12.998 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: eager.
+16:41:13.365 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+16:41:13.365 [main] INFO  com.take_home.tests.BaseTest - Page load strategy set to EAGER for this test.
+16:41:13.365 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening Guru99 home page
+16:41:13.367 [main] INFO  com.take_home.pages.GuruPage - Opening URL: https://demo.guru99.com/test/guru99home
+16:41:13.866 [main] INFO  com.take_home.tests.BaseTest - STEP: Attempting to interact with iframe
+16:41:14.007 [main] INFO  com.take_home.pages.GuruPage - Switched to iframe by ID
+16:41:14.641 [main] INFO  com.take_home.pages.GuruPage - Clicked iframe image using @FindBy locator
+16:41:14.644 [main] INFO  com.take_home.tests.BaseTest - STEP: Handling new tab after iframe interaction
+16:41:14.654 [main] INFO  com.take_home.pages.GuruPage - Switched to new tab
+16:41:14.655 [main] INFO  com.take_home.pages.GuruPage - Number of tabs open: 2
+16:41:14.747 [main] INFO  com.take_home.pages.GuruPage - Closed tab and switched to main window
+16:41:14.747 [main] INFO  com.take_home.tests.BaseTest - STEP: Submitting email for validation
+16:41:14.924 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating alert message
+16:41:14.948 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Alert text contains 'Successfully'
+16:41:14.948 [main] INFO  com.take_home.tests.BaseTest - STEP: Navigating to tooltip page
+16:41:15.373 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating download button presence
+16:41:15.373 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Download button is present on the page
+16:41:15.398 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from eager to normal
+16:41:15.499 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+16:41:15.500 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testIFrameTabHandling() ====
+16:41:15.501 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRestApi() ====
+16:41:15.501 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+16:41:15.864 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+16:41:15.865 [main] INFO  com.take_home.tests.BaseTest - STEP: Sending GET request to users endpoint
+16:41:16.082 [main] INFO  com.take_home.tests.BaseTest - STEP: Parsing response to JSON format
+16:41:16.087 [main] INFO  com.take_home.tests.BaseTest - STEP: Logging user names and emails
+16:41:16.088 [main] INFO  com.take_home.tests.BaseTest - Leanne Graham | Sincere@april.biz
+16:41:16.088 [main] INFO  com.take_home.tests.BaseTest - Ervin Howell | Shanna@melissa.tv
+16:41:16.088 [main] INFO  com.take_home.tests.BaseTest - Clementine Bauch | Nathan@yesenia.net
+16:41:16.088 [main] INFO  com.take_home.tests.BaseTest - Patricia Lebsack | Julianne.OConner@kory.org
+16:41:16.089 [main] INFO  com.take_home.tests.BaseTest - Chelsey Dietrich | Lucio_Hettinger@annie.ca
+16:41:16.089 [main] INFO  com.take_home.tests.BaseTest - Mrs. Dennis Schulist | Karley_Dach@jasper.info
+16:41:16.089 [main] INFO  com.take_home.tests.BaseTest - Kurtis Weissnat | Telly.Hoeger@billy.biz
+16:41:16.089 [main] INFO  com.take_home.tests.BaseTest - Nicholas Runolfsdottir V | Sherwood@rosamond.me
+16:41:16.089 [main] INFO  com.take_home.tests.BaseTest - Glenna Reichert | Chaim_McDermott@dana.io
+16:41:16.089 [main] INFO  com.take_home.tests.BaseTest - Clementina DuBuque | Rey.Padberg@karina.biz
+16:41:16.089 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating email format
+16:41:16.089 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: First user's email contains @ symbol
+16:41:16.090 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRestApi() ====
+16:41:16.191 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+16:41:16.192 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testErrorMessagesAndFooter() ====
+16:41:16.193 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+16:41:16.533 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+16:41:16.533 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening login page
+16:41:16.533 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
+16:41:16.926 [main] INFO  com.take_home.tests.BaseTest - STEP: Clicking login button without entering credentials
+16:41:17.005 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating error message
+16:41:17.031 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Error message is displayed correctly
+16:41:17.031 [main] INFO  com.take_home.tests.BaseTest - STEP: Logging in with valid credentials
+16:41:17.243 [main] INFO  com.take_home.tests.BaseTest - STEP: Checking footer text
+16:41:17.275 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Footer contains required information
+16:41:17.275 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testErrorMessagesAndFooter() ====
+16:41:17.376 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
