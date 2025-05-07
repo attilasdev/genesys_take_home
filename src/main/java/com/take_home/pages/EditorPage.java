@@ -6,33 +6,41 @@ import org.openqa.selenium.support.FindBy;
 
 
 public class EditorPage extends BasePage{
-    @FindBy(css = ".ql-editor")
-    private WebElement editor;
-
-    @FindBy(css = ".ql-bold")
+    @FindBy(xpath = "//button[contains(@data-cke-tooltip-text, 'Bold')]")
     private WebElement boldButton;
 
-    @FindBy(css = ".ql-underline")
+    @FindBy(xpath = "//button[contains(@data-cke-tooltip-text, 'Underline')]")
     private WebElement underlineButton;
+
+    public WebElement getExactEditableArea() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        return (WebElement) js.executeScript(
+            "return document.querySelector('.ck-editor__editable[contenteditable=true]');"
+        );
+    }
 
     public void open() {
         driver.get("https://onlinehtmleditor.dev");
     }
 
     public void clickBoldButton() {
-        click(boldButton);
+        waitForElementClickable(boldButton);
+        click(boldButton);  
     }
 
     public void clickUnderlineButton() {
-        clickUnderlineButton();
+        waitForElementClickable(underlineButton);
+        click(underlineButton);
     }
 
     public void typeText(String text) {
-        click(editor);
-        sendKeys(editor, text);
+        WebElement exactEditor = getExactEditableArea();
+        exactEditor.click();
+        exactEditor.sendKeys(text);
     }
 
     public String getEditorContent() {
-        return (String) ((JavascriptExecutor) driver).executeScript("return document.querySelector('.ql-editor').innerHTML");
+        return (String) ((JavascriptExecutor) driver).executeScript("return document.querySelector('.ck-editor__editable').innerHTML");
     }
+
 }

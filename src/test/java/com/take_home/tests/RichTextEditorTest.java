@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class RichTextEditorTest {
     
     @Test
-    public void testRichTextEditor() {
+    public void testRichTextEditor() throws InterruptedException {
         EditorPage editorPage = new EditorPage();
         editorPage.open();
 
