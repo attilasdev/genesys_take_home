@@ -29,5 +29,9 @@ public class CheckoutPage extends BasePage {
         click(continueButton);
     }
 
+    public void clickFinish() {
+        click(finishButton);
+    }
 
+    
 }
