@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
-public class EditorPage {
+public class EditorPage extends BasePage{
     @FindBy(css = ".ql-editor")
     private WebElement editor;
 
@@ -14,5 +14,25 @@ public class EditorPage {
 
     @FindBy(css = ".ql-underline")
     private WebElement underlineButton;
-    
+
+    public void open() {
+        driver.get("https://onlinehtmleditor.dev");
+    }
+
+    public void clickBoldButton() {
+        click(boldButton);
+    }
+
+    public void clickUnderlineButton() {
+        clickUnderlineButton();
+    }
+
+    public void typeText(String text) {
+        click(editor);
+        sendKeys(editor, text);
+    }
+
+    public String getEditorContent() {
+        return (String) ((JavascriptExecutor) driver).executeScript("return document.querySelector('.ql-editor').innerHTML");
+    }
 }
