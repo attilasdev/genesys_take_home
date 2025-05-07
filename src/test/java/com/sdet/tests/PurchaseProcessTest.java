@@ -22,6 +22,10 @@ public class PurchaseProcessTest extends BaseTest {
         loginPage.open();
         loginPage.login(credentials.getUsername(), credentials.getPassword());
 
+        InventoryPage inventoryPage = new InventoryPage();
+        inventoryPage.addItemToCart("Sauce Labs Backpack");
+        inventoryPage.addItemToCart("Sauce Labs Fleece Jacket");
+
         
     }
 }
