@@ -56,6 +56,10 @@ public class DriverManager {
     }
     public static void setPageLoadStrategy(PageLoadStrategy strategy) {
         PAGE_LOAD_STRATEGY = strategy;
+
+        if (driver != null) {
+            quitDriver();
+        }
     }
 }
 

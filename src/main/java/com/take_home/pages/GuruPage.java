@@ -8,7 +8,8 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.openqa.selenium.By;
-
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 
 public class GuruPage extends BasePage{
     private static final Logger logger = LoggerFactory.getLogger(GuruPage.class);
@@ -82,6 +83,36 @@ public class GuruPage extends BasePage{
         }
     }
 
+    public void waitForNewTabAndSwitch() {
+        String originalHandle = driver.getWindowHandle();
+        
+        // Wait for new tab to open (up to 5 seconds)
+        new WebDriverWait(driver, Duration.ofSeconds(5))
+            .until(d -> d.getWindowHandles().size() > 1);
+        
+        // Switch to the new tab
+        for (String handle : driver.getWindowHandles()) {
+            if (!handle.equals(originalHandle)) {
+                driver.switchTo().window(handle);
+                logger.info("Switched to new tab");
+                return;
+            }
+        }
+    }
+
+    public void closeCurrentTabAndSwitchToMain() {
+        List<String> tabs = new ArrayList<>(driver.getWindowHandles());
+        logger.info("Number of tabs open: {}", tabs.size());
+        
+        if (tabs.size() > 1) {
+            driver.close(); // Close current tab
+            driver.switchTo().window(tabs.get(0)); // Switch to main tab
+            logger.info("Closed tab and switched to main window");
+        } else {
+            logger.info("Only one tab is open, no need to close or switch");
+        }
+    }
+
     public void switchToMainWindow() {
         driver.switchTo().defaultContent();
     }
@@ -91,13 +122,6 @@ public class GuruPage extends BasePage{
         driver.switchTo().window(tabs.get(0));
     }
 
-    public void closeCurrentTabAndSwitchToMain() {
-        List<String> tabs = new ArrayList<>(driver.getWindowHandles());
-        if (tabs.size() > 1) {
-            driver.close();
-            driver.switchTo().window(tabs.get(0));
-        }  
-    }
 
     public void submitEmail(String email) {
         scrollToElement(emailSubmissionSection);
