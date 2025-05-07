@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.take_home.tests.PurchaseProcessTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.252 s <<< FAILURE! - in com.take_home.tests.PurchaseProcessTest
+testPurchaseProcess  Time elapsed: 0.052 s  <<< ERROR!
+java.lang.NoSuchFieldError: Companion
+

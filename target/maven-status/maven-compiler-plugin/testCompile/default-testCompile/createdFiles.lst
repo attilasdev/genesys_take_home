@@ -1,0 +1,6 @@
+com/take_home/tests/BaseTest.class
+com/take_home/tests/RestApitTest.class
+com/take_home/tests/IFrameTabHandlingTest.class
+com/take_home/tests/PurchaseProcessTest.class
+com/take_home/tests/ErrorMessagesTest.class
+com/take_home/tests/RichTextEditorTest.class

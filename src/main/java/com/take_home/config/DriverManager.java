@@ -6,6 +6,7 @@ import org.openqa.selenium.firefox.*;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 public class DriverManager {
@@ -19,13 +20,16 @@ public class DriverManager {
     }
 
     public static void initializeDriver(String browserType) {
+
+        String driversPath = new File("src/main/resources/drivers").getAbsolutePath();
+
         switch (browserType.toLowerCase()) {
             case "firefox":
-                WebDriverManager.firefoxdriver().setup();
+                System.setProperty("webdriver.gecko.driver", driversPath + "/geckodriver");
                 driver = new FirefoxDriver();
                 break;
             case "chrome":
-                WebDriverManager.chromedriver().setup();
+                System.setProperty("webdriver.chrome.driver", driversPath + "/chromedriver");
                 driver = new ChromeDriver();
                 break;
         }
