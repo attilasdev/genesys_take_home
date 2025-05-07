@@ -374,3 +374,337 @@ java.net.SocketException: Connection reset
 16:41:17.275 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Footer contains required information
 16:41:17.275 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testErrorMessagesAndFooter() ====
 16:41:17.376 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+19:04:35.741 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testPurchaseProcess() ====
+19:04:35.744 [main] INFO  com.take_home.config.ConfigReader - Configuration loaded successfully with 9 properties
+19:04:35.744 [main] WARN  com.take_home.config.DriverManager - Invalid page load strategy: normal, using default: {}.
+19:04:35.744 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:04:36.707 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+19:04:36.708 [main] INFO  com.take_home.tests.BaseTest - STEP: Reading credentials from JSON file
+19:04:36.795 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening login page and logging in
+19:04:36.806 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
+19:04:42.628 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding items to cart
+19:04:42.740 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating cart item count
+19:04:42.740 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Cart contains exactly 2 items
+19:04:42.771 [main] INFO  com.take_home.tests.BaseTest - STEP: Proceeding to checkout
+19:04:42.901 [main] INFO  com.take_home.tests.BaseTest - STEP: Completing checkout process
+19:04:43.275 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating order confirmation
+19:04:43.303 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Order confirmation message is correct
+19:04:43.305 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testPurchaseProcess() ====
+19:04:43.407 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+19:04:43.413 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRichTextEditor() ====
+19:04:43.413 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:04:43.833 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+19:04:43.834 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening rich text editor
+19:04:43.834 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://onlinehtmleditor.dev
+19:04:44.893 [main] INFO  com.take_home.tests.BaseTest - STEP: Applying bold formatting and typing 'Automation'
+19:04:45.759 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding space between formatted texts
+19:04:45.838 [main] INFO  com.take_home.tests.BaseTest - STEP: Applying underline formatting and typing 'Test'
+19:04:46.100 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding final text 'Example'
+19:04:46.190 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating formatted content
+19:04:46.195 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Bold formatting is applied correctly
+19:04:46.195 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Underline formatting is applied correctly
+19:04:46.196 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRichTextEditor() ====
+19:04:46.297 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+19:04:46.299 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testIFrameTabHandling() ====
+19:04:46.299 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:04:46.685 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+19:04:46.685 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from normal to eager
+19:04:46.786 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+19:04:46.786 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: eager.
+19:04:47.150 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+19:04:47.150 [main] INFO  com.take_home.tests.BaseTest - Page load strategy set to EAGER for this test.
+19:04:47.150 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening Guru99 home page
+19:04:47.151 [main] INFO  com.take_home.pages.GuruPage - Opening URL: https://demo.guru99.com/test/guru99home
+19:04:47.666 [main] INFO  com.take_home.tests.BaseTest - STEP: Attempting to interact with iframe
+19:04:47.734 [main] INFO  com.take_home.pages.GuruPage - Switched to iframe by ID
+19:04:48.373 [main] INFO  com.take_home.pages.GuruPage - Clicked iframe image using @FindBy locator
+19:04:48.380 [main] INFO  com.take_home.tests.BaseTest - STEP: Handling new tab after iframe interaction
+19:04:48.391 [main] INFO  com.take_home.pages.GuruPage - Switched to new tab
+19:04:48.392 [main] INFO  com.take_home.pages.GuruPage - Number of tabs open: 2
+19:04:48.402 [main] INFO  com.take_home.pages.GuruPage - Closed tab and switched to main window
+19:04:48.402 [main] INFO  com.take_home.tests.BaseTest - STEP: Submitting email for validation
+19:04:48.673 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating alert message
+19:04:48.698 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Alert text contains 'Successfully'
+19:04:48.698 [main] INFO  com.take_home.tests.BaseTest - STEP: Navigating to tooltip page
+19:04:49.160 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating download button presence
+19:04:49.160 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Download button is present on the page
+19:04:49.190 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from eager to normal
+19:04:49.291 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+19:04:49.291 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testIFrameTabHandling() ====
+19:04:49.293 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRestApi() ====
+19:04:49.293 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:04:49.716 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+19:04:49.717 [main] INFO  com.take_home.tests.BaseTest - STEP: Sending GET request to users endpoint
+19:04:50.009 [main] INFO  com.take_home.tests.BaseTest - STEP: Parsing response to JSON format
+19:04:50.015 [main] INFO  com.take_home.tests.BaseTest - STEP: Logging user names and emails
+19:04:50.016 [main] INFO  com.take_home.tests.BaseTest - Leanne Graham | Sincere@april.biz
+19:04:50.016 [main] INFO  com.take_home.tests.BaseTest - Ervin Howell | Shanna@melissa.tv
+19:04:50.016 [main] INFO  com.take_home.tests.BaseTest - Clementine Bauch | Nathan@yesenia.net
+19:04:50.016 [main] INFO  com.take_home.tests.BaseTest - Patricia Lebsack | Julianne.OConner@kory.org
+19:04:50.017 [main] INFO  com.take_home.tests.BaseTest - Chelsey Dietrich | Lucio_Hettinger@annie.ca
+19:04:50.017 [main] INFO  com.take_home.tests.BaseTest - Mrs. Dennis Schulist | Karley_Dach@jasper.info
+19:04:50.017 [main] INFO  com.take_home.tests.BaseTest - Kurtis Weissnat | Telly.Hoeger@billy.biz
+19:04:50.017 [main] INFO  com.take_home.tests.BaseTest - Nicholas Runolfsdottir V | Sherwood@rosamond.me
+19:04:50.017 [main] INFO  com.take_home.tests.BaseTest - Glenna Reichert | Chaim_McDermott@dana.io
+19:04:50.017 [main] INFO  com.take_home.tests.BaseTest - Clementina DuBuque | Rey.Padberg@karina.biz
+19:04:50.017 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating email format
+19:04:50.017 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: First user's email contains @ symbol
+19:04:50.018 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRestApi() ====
+19:04:50.119 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+19:04:50.121 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testErrorMessagesAndFooter() ====
+19:04:50.121 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:04:50.472 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+19:04:50.472 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening login page
+19:04:50.473 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
+19:04:50.875 [main] INFO  com.take_home.tests.BaseTest - STEP: Clicking login button without entering credentials
+19:04:50.961 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating error message
+19:04:50.991 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Error message is displayed correctly
+19:04:50.991 [main] INFO  com.take_home.tests.BaseTest - STEP: Logging in with valid credentials
+19:04:51.219 [main] INFO  com.take_home.tests.BaseTest - STEP: Checking footer text
+19:04:51.253 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Footer contains required information
+19:04:51.254 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testErrorMessagesAndFooter() ====
+19:04:51.354 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+19:09:25.954 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testPurchaseProcess() ====
+19:09:25.956 [main] INFO  com.take_home.config.ConfigReader - Configuration loaded successfully with 9 properties
+19:09:25.957 [main] WARN  com.take_home.config.DriverManager - Invalid page load strategy: normal, using default: {}.
+19:09:25.957 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:09:26.656 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:09:26.656 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:09:26.737 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:09:26.737 [main] INFO  com.take_home.config.DriverManager - Chrome driver set up automatically with WebDriverManager
+19:09:27.269 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testPurchaseProcess() ====
+19:09:27.276 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRichTextEditor() ====
+19:09:27.276 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:09:27.569 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:09:27.569 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:09:27.643 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:09:27.644 [main] INFO  com.take_home.config.DriverManager - Chrome driver set up automatically with WebDriverManager
+19:09:27.911 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRichTextEditor() ====
+19:09:27.914 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testIFrameTabHandling() ====
+19:09:27.914 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:09:28.265 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:09:28.265 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:09:28.344 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:09:28.345 [main] INFO  com.take_home.config.DriverManager - Chrome driver set up automatically with WebDriverManager
+19:09:28.610 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from normal to normal
+19:09:28.611 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testIFrameTabHandling() ====
+19:09:28.613 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRestApi() ====
+19:09:28.613 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:09:28.907 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:09:28.908 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:09:28.993 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:09:28.993 [main] INFO  com.take_home.config.DriverManager - Chrome driver set up automatically with WebDriverManager
+19:09:29.258 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRestApi() ====
+19:09:29.260 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testErrorMessagesAndFooter() ====
+19:09:29.260 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:09:29.552 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:09:29.552 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:09:29.628 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:09:29.628 [main] INFO  com.take_home.config.DriverManager - Chrome driver set up automatically with WebDriverManager
+19:09:29.892 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testErrorMessagesAndFooter() ====
+19:50:36.008 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testPurchaseProcess() ====
+19:50:36.010 [main] INFO  com.take_home.config.ConfigReader - Configuration loaded successfully with 9 properties
+19:50:36.011 [main] WARN  com.take_home.config.DriverManager - Invalid page load strategy: normal, using default: {}.
+19:50:36.011 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:50:36.855 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:50:36.855 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:50:36.937 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:50:36.938 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+19:50:37.234 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:50:37.234 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:50:37.318 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:50:37.318 [main] INFO  com.take_home.config.DriverManager - Chrome driver set up automatically with WebDriverManager
+19:50:37.886 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testPurchaseProcess() ====
+19:50:37.892 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRichTextEditor() ====
+19:50:37.892 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:50:38.190 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:50:38.190 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:50:38.267 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:50:38.267 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+19:50:38.551 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:50:38.552 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:50:38.627 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:50:38.627 [main] INFO  com.take_home.config.DriverManager - Chrome driver set up automatically with WebDriverManager
+19:50:38.893 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRichTextEditor() ====
+19:50:38.895 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testIFrameTabHandling() ====
+19:50:38.895 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:50:39.171 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:50:39.172 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:50:39.265 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:50:39.265 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+19:50:39.544 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:50:39.544 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:50:39.618 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:50:39.618 [main] INFO  com.take_home.config.DriverManager - Chrome driver set up automatically with WebDriverManager
+19:50:39.884 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from normal to normal
+19:50:39.884 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testIFrameTabHandling() ====
+19:50:39.886 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRestApi() ====
+19:50:39.887 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:50:40.178 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:50:40.178 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:50:40.266 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:50:40.267 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+19:50:40.642 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:50:40.642 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:50:40.738 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:50:40.738 [main] INFO  com.take_home.config.DriverManager - Chrome driver set up automatically with WebDriverManager
+19:50:41.003 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRestApi() ====
+19:50:41.005 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testErrorMessagesAndFooter() ====
+19:50:41.006 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:50:41.282 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:50:41.282 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:50:41.354 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:50:41.354 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+19:50:41.631 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:50:41.631 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:50:41.716 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:50:41.716 [main] INFO  com.take_home.config.DriverManager - Chrome driver set up automatically with WebDriverManager
+19:50:41.982 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testErrorMessagesAndFooter() ====
+19:52:15.484 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testPurchaseProcess() ====
+19:52:15.487 [main] INFO  com.take_home.config.ConfigReader - Configuration loaded successfully with 9 properties
+19:52:15.487 [main] WARN  com.take_home.config.DriverManager - Invalid page load strategy: normal, using default: {}.
+19:52:15.487 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:52:16.259 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:52:16.259 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:52:16.347 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:52:16.348 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+19:52:16.918 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testPurchaseProcess() ====
+19:52:16.925 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRichTextEditor() ====
+19:52:16.925 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:52:17.218 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:52:17.218 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:52:17.298 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:52:17.298 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+19:52:17.562 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRichTextEditor() ====
+19:52:17.565 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testIFrameTabHandling() ====
+19:52:17.565 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:52:17.862 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:52:17.863 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:52:17.948 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:52:17.948 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+19:52:18.215 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from normal to normal
+19:52:18.215 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testIFrameTabHandling() ====
+19:52:18.217 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRestApi() ====
+19:52:18.217 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:52:18.505 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:52:18.505 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:52:18.578 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:52:18.578 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+19:52:18.843 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRestApi() ====
+19:52:18.846 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testErrorMessagesAndFooter() ====
+19:52:18.847 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:52:19.131 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136
+19:52:19.131 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_136)
+19:52:19.216 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+19:52:19.216 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+19:52:19.481 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testErrorMessagesAndFooter() ====
+19:54:34.847 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testPurchaseProcess() ====
+19:54:34.850 [main] INFO  com.take_home.config.ConfigReader - Configuration loaded successfully with 9 properties
+19:54:34.850 [main] WARN  com.take_home.config.DriverManager - Invalid page load strategy: normal, using default: {}.
+19:54:34.850 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:54:35.519 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+19:54:35.558 [main] INFO  io.github.bonigarcia.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/136.0.7103.92/linux64/chromedriver-linux64.zip
+19:54:35.874 [main] INFO  io.github.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file chromedriver-linux64.zip
+19:54:35.977 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+19:54:35.978 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+19:54:36.626 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+19:54:36.627 [main] INFO  com.take_home.tests.BaseTest - STEP: Reading credentials from JSON file
+19:54:36.714 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening login page and logging in
+19:54:36.724 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
+19:54:42.466 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding items to cart
+19:54:42.576 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating cart item count
+19:54:42.576 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Cart contains exactly 2 items
+19:54:42.606 [main] INFO  com.take_home.tests.BaseTest - STEP: Proceeding to checkout
+19:54:42.730 [main] INFO  com.take_home.tests.BaseTest - STEP: Completing checkout process
+19:54:43.089 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating order confirmation
+19:54:43.115 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Order confirmation message is correct
+19:54:43.117 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testPurchaseProcess() ====
+19:54:43.224 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+19:54:43.229 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRichTextEditor() ====
+19:54:43.229 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:54:43.264 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+19:54:43.267 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+19:54:43.267 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+19:54:43.638 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+19:54:43.638 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening rich text editor
+19:54:43.639 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://onlinehtmleditor.dev
+19:54:44.637 [main] INFO  com.take_home.tests.BaseTest - STEP: Applying bold formatting and typing 'Automation'
+19:54:45.529 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding space between formatted texts
+19:54:45.608 [main] INFO  com.take_home.tests.BaseTest - STEP: Applying underline formatting and typing 'Test'
+19:54:45.875 [main] INFO  com.take_home.tests.BaseTest - STEP: Adding final text 'Example'
+19:54:45.984 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating formatted content
+19:54:45.989 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Bold formatting is applied correctly
+19:54:45.990 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Underline formatting is applied correctly
+19:54:45.991 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRichTextEditor() ====
+19:54:46.092 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+19:54:46.094 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testIFrameTabHandling() ====
+19:54:46.094 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:54:46.100 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+19:54:46.102 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+19:54:46.103 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+19:54:46.455 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+19:54:46.456 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from normal to eager
+19:54:46.557 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+19:54:46.557 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: eager.
+19:54:46.561 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+19:54:46.564 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+19:54:46.564 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+19:54:46.995 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+19:54:46.995 [main] INFO  com.take_home.tests.BaseTest - Page load strategy set to EAGER for this test.
+19:54:46.995 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening Guru99 home page
+19:54:46.996 [main] INFO  com.take_home.pages.GuruPage - Opening URL: https://demo.guru99.com/test/guru99home
+19:54:47.441 [main] INFO  com.take_home.tests.BaseTest - STEP: Attempting to interact with iframe
+19:54:47.573 [main] INFO  com.take_home.pages.GuruPage - Switched to iframe by ID
+19:54:48.202 [main] INFO  com.take_home.pages.GuruPage - Clicked iframe image using @FindBy locator
+19:54:48.205 [main] INFO  com.take_home.tests.BaseTest - STEP: Handling new tab after iframe interaction
+19:54:48.215 [main] INFO  com.take_home.pages.GuruPage - Switched to new tab
+19:54:48.216 [main] INFO  com.take_home.pages.GuruPage - Number of tabs open: 2
+19:54:48.225 [main] INFO  com.take_home.pages.GuruPage - Closed tab and switched to main window
+19:54:48.225 [main] INFO  com.take_home.tests.BaseTest - STEP: Submitting email for validation
+19:54:48.419 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating alert message
+19:54:48.445 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Alert text contains 'Successfully'
+19:54:48.445 [main] INFO  com.take_home.tests.BaseTest - STEP: Navigating to tooltip page
+19:54:48.947 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating download button presence
+19:54:48.948 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Download button is present on the page
+19:54:48.975 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from eager to normal
+19:54:49.081 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+19:54:49.081 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testIFrameTabHandling() ====
+19:54:49.083 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRestApi() ====
+19:54:49.083 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:54:49.087 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+19:54:49.088 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+19:54:49.088 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+19:54:49.455 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+19:54:49.455 [main] INFO  com.take_home.tests.BaseTest - STEP: Sending GET request to users endpoint
+19:54:49.699 [main] INFO  com.take_home.tests.BaseTest - STEP: Parsing response to JSON format
+19:54:49.706 [main] INFO  com.take_home.tests.BaseTest - STEP: Logging user names and emails
+19:54:49.707 [main] INFO  com.take_home.tests.BaseTest - Leanne Graham | Sincere@april.biz
+19:54:49.707 [main] INFO  com.take_home.tests.BaseTest - Ervin Howell | Shanna@melissa.tv
+19:54:49.707 [main] INFO  com.take_home.tests.BaseTest - Clementine Bauch | Nathan@yesenia.net
+19:54:49.707 [main] INFO  com.take_home.tests.BaseTest - Patricia Lebsack | Julianne.OConner@kory.org
+19:54:49.707 [main] INFO  com.take_home.tests.BaseTest - Chelsey Dietrich | Lucio_Hettinger@annie.ca
+19:54:49.707 [main] INFO  com.take_home.tests.BaseTest - Mrs. Dennis Schulist | Karley_Dach@jasper.info
+19:54:49.708 [main] INFO  com.take_home.tests.BaseTest - Kurtis Weissnat | Telly.Hoeger@billy.biz
+19:54:49.708 [main] INFO  com.take_home.tests.BaseTest - Nicholas Runolfsdottir V | Sherwood@rosamond.me
+19:54:49.708 [main] INFO  com.take_home.tests.BaseTest - Glenna Reichert | Chaim_McDermott@dana.io
+19:54:49.708 [main] INFO  com.take_home.tests.BaseTest - Clementina DuBuque | Rey.Padberg@karina.biz
+19:54:49.708 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating email format
+19:54:49.708 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: First user's email contains @ symbol
+19:54:49.708 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRestApi() ====
+19:54:49.809 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+19:54:49.811 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testErrorMessagesAndFooter() ====
+19:54:49.812 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+19:54:49.816 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.92 (resolved driver for Chrome 136)
+19:54:49.818 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/dev/.cache/selenium/chromedriver/linux64/136.0.7103.92/chromedriver
+19:54:49.818 [main] INFO  com.take_home.config.DriverManager - Chrome driver setup complete
+19:54:50.214 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+19:54:50.214 [main] INFO  com.take_home.tests.BaseTest - STEP: Opening login page
+19:54:50.215 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
+19:54:50.648 [main] INFO  com.take_home.tests.BaseTest - STEP: Clicking login button without entering credentials
+19:54:50.725 [main] INFO  com.take_home.tests.BaseTest - STEP: Validating error message
+19:54:50.757 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Error message is displayed correctly
+19:54:50.757 [main] INFO  com.take_home.tests.BaseTest - STEP: Logging in with valid credentials
+19:54:50.986 [main] INFO  com.take_home.tests.BaseTest - STEP: Checking footer text
+19:54:51.022 [main] INFO  com.take_home.tests.BaseTest - VALIDATION: Footer contains required information
+19:54:51.022 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testErrorMessagesAndFooter() ====
+19:54:51.123 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null

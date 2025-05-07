@@ -24,3 +24,6 @@ drivers/
 # Other test artifacts
 test-output/
 screenshots/
+
+# Drivers
+src/main/resources/drivers/
