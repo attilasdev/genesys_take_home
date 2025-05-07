@@ -26,6 +26,18 @@ public class PurchaseProcessTest extends BaseTest {
         inventoryPage.addItemToCart("Sauce Labs Backpack");
         inventoryPage.addItemToCart("Sauce Labs Fleece Jacket");
 
-        
+        assertEquals(2, inventoryPage.getCartItemCount(), "Cart should contain 2 items.");
+
+        inventoryPage.goToCart();
+
+        CartPage cartPage = new CartPage();
+        cartPage.proceedToCheckout();
+
+        CheckoutPage checkoutPage = new CheckoutPage();
+        checkoutPage.fillCheckoutInfo("firstName", "lastName", "1234");
+        checkoutPage.clickFinish();
+
+        String confirmationMsg = checkoutPage.getConfirmationMessage();
+        assertEquals("Thank you for your order", confirmationMsg, "Order confirmation message should match.");
     }
 }

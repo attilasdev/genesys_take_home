@@ -3,6 +3,9 @@ package com.take_home.config;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.*;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import java.util.concurrent.TimeUnit;
 
 public class DriverManager {
@@ -18,9 +21,11 @@ public class DriverManager {
     public static void initializeDriver(String browserType) {
         switch (browserType.toLowerCase()) {
             case "firefox":
+                WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
                 break;
             case "chrome":
+                WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
                 break;
         }
