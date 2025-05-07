@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
+import com.take_home.config.ConfigReader;
 
 public class GuruPage extends BasePage{
     private static final Logger logger = LoggerFactory.getLogger(GuruPage.class);
@@ -40,7 +41,9 @@ public class GuruPage extends BasePage{
 
 
     public void open() {
-        driver.get("https://demo.guru99.com/test/guru99home/");
+        String url = ConfigReader.getProperty("base.url.guru");
+        logger.info("Opening URL: {}", url);
+        driver.get(url);
     }
 
     public void switchToIFrame() {

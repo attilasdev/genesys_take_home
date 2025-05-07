@@ -3,6 +3,7 @@ package com.take_home.pages;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import com.take_home.config.ConfigReader;
 
 
 public class EditorPage extends BasePage{
@@ -20,7 +21,9 @@ public class EditorPage extends BasePage{
     }
 
     public void open() {
-        driver.get("https://onlinehtmleditor.dev");
+        String url = ConfigReader.getProperty("base.url.editor");
+        logger.info("Opening URL: {}", url);
+        driver.get(url);
     }
 
     public void clickBoldButton() {

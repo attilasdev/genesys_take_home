@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.take_home.tests.PurchaseProcessTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.589 s - in com.take_home.tests.PurchaseProcessTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.78 s - in com.take_home.tests.PurchaseProcessTest

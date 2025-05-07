@@ -2,6 +2,8 @@ package com.take_home.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import com.take_home.config.ConfigReader;
+
 
 public class LoginPage extends BasePage {
     @FindBy(id = "user-name")
@@ -31,6 +33,8 @@ public class LoginPage extends BasePage {
     }
 
     public void open() {
-        driver.get("https://www.saucedemo.com/");
+        String url = ConfigReader.getProperty("base.url.sauce");
+        logger.info("Opening URL: {}", url);
+        driver.get(url);
     }
 }   

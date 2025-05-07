@@ -144,3 +144,94 @@ Session ID: cd5028360899ad5b41dacf4c3742898e
 16:01:11.719 [main] INFO  com.take_home.pages.GuruPage - Closed tab and switched to main window
 16:01:11.960 [main] INFO  com.take_home.tests.BaseTest - Alert text: Form Submitted Successfully...
 16:01:12.684 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testIFrameTabHandling() ====
+16:03:21.684 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testPurchaseProcess() ====
+16:03:29.228 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testPurchaseProcess() ====
+16:03:29.246 [AsyncHttpClient-1-4] WARN  org.asynchttpclient.netty.handler.WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256) ~[netty-buffer-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+16:03:32.185 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testIFrameTabHandling() ====
+16:03:32.803 [main] INFO  com.take_home.tests.BaseTest - Page load strategy set to EAGER for this test.
+16:03:33.264 [main] INFO  com.take_home.tests.BaseTest - Attempting to interact with iframe.
+16:03:33.324 [main] INFO  com.take_home.pages.GuruPage - Switched to iframe by ID
+16:03:33.988 [main] INFO  com.take_home.pages.GuruPage - Clicked iframe image using @FindBy locator
+16:03:34.007 [main] INFO  com.take_home.pages.GuruPage - Switched to new tab
+16:03:34.008 [main] INFO  com.take_home.pages.GuruPage - Number of tabs open: 2
+16:03:34.020 [main] INFO  com.take_home.pages.GuruPage - Closed tab and switched to main window
+16:03:34.238 [main] INFO  com.take_home.tests.BaseTest - Alert text: Form Submitted Successfully...
+16:03:34.913 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testIFrameTabHandling() ====
+16:03:34.915 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRestApi() ====
+16:03:35.656 [main] INFO  com.take_home.tests.BaseTest - Leanne Graham | Sincere@april.biz
+16:03:35.656 [main] INFO  com.take_home.tests.BaseTest - Ervin Howell | Shanna@melissa.tv
+16:03:35.657 [main] INFO  com.take_home.tests.BaseTest - Clementine Bauch | Nathan@yesenia.net
+16:03:35.657 [main] INFO  com.take_home.tests.BaseTest - Patricia Lebsack | Julianne.OConner@kory.org
+16:03:35.657 [main] INFO  com.take_home.tests.BaseTest - Chelsey Dietrich | Lucio_Hettinger@annie.ca
+16:03:35.657 [main] INFO  com.take_home.tests.BaseTest - Mrs. Dennis Schulist | Karley_Dach@jasper.info
+16:03:35.657 [main] INFO  com.take_home.tests.BaseTest - Kurtis Weissnat | Telly.Hoeger@billy.biz
+16:03:35.657 [main] INFO  com.take_home.tests.BaseTest - Nicholas Runolfsdottir V | Sherwood@rosamond.me
+16:03:35.657 [main] INFO  com.take_home.tests.BaseTest - Glenna Reichert | Chaim_McDermott@dana.io
+16:03:35.658 [main] INFO  com.take_home.tests.BaseTest - Clementina DuBuque | Rey.Padberg@karina.biz
+16:03:35.658 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRestApi() ====
+16:03:35.762 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testErrorMessagesAndFooter() ====
+16:03:37.095 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testErrorMessagesAndFooter() ====
+16:16:13.407 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testPurchaseProcess() ====
+16:16:13.410 [main] INFO  com.take_home.config.ConfigReader - Configuration loaded successfully with 9 properties
+16:16:13.410 [main] WARN  com.take_home.config.DriverManager - Invalid page load strategy: normal, using default: {}.
+16:16:13.410 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+16:16:14.314 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+16:16:14.431 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
+16:16:21.802 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testPurchaseProcess() ====
+16:16:21.910 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+16:16:21.915 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+16:16:22.340 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+16:16:22.341 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://onlinehtmleditor.dev
+16:16:24.725 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testIFrameTabHandling() ====
+16:16:24.726 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from normal to eager
+16:16:24.833 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+16:16:24.833 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: eager.
+16:16:25.193 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+16:16:25.193 [main] INFO  com.take_home.tests.BaseTest - Page load strategy set to EAGER for this test.
+16:16:25.194 [main] INFO  com.take_home.pages.GuruPage - Opening URL: https://demo.guru99.com/test/guru99home
+16:16:25.644 [main] INFO  com.take_home.tests.BaseTest - Attempting to interact with iframe.
+16:16:25.779 [main] INFO  com.take_home.pages.GuruPage - Switched to iframe by ID
+16:16:26.411 [main] INFO  com.take_home.pages.GuruPage - Clicked iframe image using @FindBy locator
+16:16:26.430 [main] INFO  com.take_home.pages.GuruPage - Switched to new tab
+16:16:26.432 [main] INFO  com.take_home.pages.GuruPage - Number of tabs open: 2
+16:16:26.442 [main] INFO  com.take_home.pages.GuruPage - Closed tab and switched to main window
+16:16:26.679 [main] INFO  com.take_home.tests.BaseTest - Alert text: Form Submitted Successfully...
+16:16:27.177 [main] INFO  com.take_home.config.DriverManager - Setting page load strategy from eager to normal
+16:16:27.278 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+16:16:27.279 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testIFrameTabHandling() ====
+16:16:27.281 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testRestApi() ====
+16:16:27.281 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+16:16:27.678 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+16:16:27.989 [main] INFO  com.take_home.tests.BaseTest - Leanne Graham | Sincere@april.biz
+16:16:27.989 [main] INFO  com.take_home.tests.BaseTest - Ervin Howell | Shanna@melissa.tv
+16:16:27.989 [main] INFO  com.take_home.tests.BaseTest - Clementine Bauch | Nathan@yesenia.net
+16:16:27.989 [main] INFO  com.take_home.tests.BaseTest - Patricia Lebsack | Julianne.OConner@kory.org
+16:16:27.989 [main] INFO  com.take_home.tests.BaseTest - Chelsey Dietrich | Lucio_Hettinger@annie.ca
+16:16:27.989 [main] INFO  com.take_home.tests.BaseTest - Mrs. Dennis Schulist | Karley_Dach@jasper.info
+16:16:27.990 [main] INFO  com.take_home.tests.BaseTest - Kurtis Weissnat | Telly.Hoeger@billy.biz
+16:16:27.990 [main] INFO  com.take_home.tests.BaseTest - Nicholas Runolfsdottir V | Sherwood@rosamond.me
+16:16:27.990 [main] INFO  com.take_home.tests.BaseTest - Glenna Reichert | Chaim_McDermott@dana.io
+16:16:27.990 [main] INFO  com.take_home.tests.BaseTest - Clementina DuBuque | Rey.Padberg@karina.biz
+16:16:27.990 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testRestApi() ====
+16:16:28.095 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
+16:16:28.098 [main] INFO  com.take_home.tests.BaseTest - ==== STARTING TEST: testErrorMessagesAndFooter() ====
+16:16:28.098 [main] INFO  com.take_home.config.DriverManager - Initializing chrome driver with headless: true, page load strategy: normal.
+16:16:28.491 [main] INFO  com.take_home.config.DriverManager - Driver initialized with implicit wait of 10 seconds.
+16:16:28.491 [main] INFO  com.take_home.pages.BasePage - Opening URL: https://www.saucedemo.com
+16:16:29.287 [main] INFO  com.take_home.tests.BaseTest - ==== COMPLETED TEST: testErrorMessagesAndFooter() ====
+16:16:29.388 [main] INFO  com.take_home.config.DriverManager - Driver quit and reset to null
