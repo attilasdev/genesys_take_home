@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class InventoryPage extends BasePage {
-    @FindBy(id = "shopping_cart_container")
+    @FindBy(className = "shopping_cart_badge")
     private WebElement cartBadge;
 
     @FindBy(className = "shopping_cart_link")
