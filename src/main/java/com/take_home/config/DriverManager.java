@@ -52,10 +52,8 @@ public class DriverManager {
 
             case "chrome":
                 try {
-                    // Try to match current Chrome version
                     WebDriverManager.chromedriver().setup();
                 } catch (Exception e) {
-                    // Fallback to latest driver if matching fails
                     logger.warn("Failed to find matching ChromeDriver, using latest version");
                     WebDriverManager.chromedriver().browserVersion("").setup();
                 }
