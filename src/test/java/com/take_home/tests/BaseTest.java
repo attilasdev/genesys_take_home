@@ -1,6 +1,6 @@
 package com.take_home.tests;
 
-import com.take_home.config.DriverManager;
+import com.take_home.config.ThreadLocalDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.slf4j.Logger;
@@ -24,12 +24,12 @@ public class BaseTest {
     @BeforeEach
     public void setUp(TestInfo testInfo) {
         LoggingUtils.logTestStart(logger, testInfo.getDisplayName());
-        driver = DriverManager.getDriver();
+        driver = ThreadLocalDriverManager.getDriver();
     }
 
     @AfterEach
     public void tearDown(TestInfo testInfo) {
         LoggingUtils.logTestEnd(logger, testInfo.getDisplayName());
-        DriverManager.quitDriver();
+        ThreadLocalDriverManager.quitDriver();
     }
 }

@@ -2,7 +2,7 @@ package com.take_home.tests;
 
 import com.take_home.pages.GuruPage;
 import org.junit.jupiter.api.Test;
-import com.take_home.config.DriverManager;
+import com.take_home.config.ThreadLocalDriverManager;
 import org.openqa.selenium.PageLoadStrategy;
 import org.junit.jupiter.api.DisplayName;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -14,8 +14,8 @@ public class IFrameTabHandlingTest extends BaseTest {
 
     @BeforeEach
     public void setUp() {
-        DriverManager.setPageLoadStrategy(PageLoadStrategy.EAGER);
-        DriverManager.getDriver();
+        ThreadLocalDriverManager.setPageLoadStrategy(PageLoadStrategy.EAGER);
+        ThreadLocalDriverManager.getDriver();
         logger.info("Page load strategy set to EAGER for this test.");
     }
 
@@ -56,7 +56,7 @@ public class IFrameTabHandlingTest extends BaseTest {
 
     @AfterEach
     public void cleanup() {
-        DriverManager.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+        ThreadLocalDriverManager.setPageLoadStrategy(PageLoadStrategy.NORMAL);
     }
 
 }
