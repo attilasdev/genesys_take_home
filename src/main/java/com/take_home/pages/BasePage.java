@@ -1,6 +1,6 @@
 package com.take_home.pages;
 
-import com.take_home.config.DriverManager;
+import com.take_home.config.ThreadLocalDriverManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,7 +18,7 @@ public class BasePage {
     protected static final Logger logger = LoggerFactory.getLogger(BasePage.class);
 
     public BasePage() {
-        this.driver = DriverManager.getDriver();
+        this.driver = ThreadLocalDriverManager.getDriver();
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         PageFactory.initElements(driver, this);
     }
