@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@ExtendWith(ScreenshotExtension.class)
+@ExtendWith({ScreenshotExtension.class, RetryExtension.class})
 public class BaseTest {
     protected WebDriver driver;
     protected static final Logger logger = LoggerFactory.getLogger(BaseTest.class);

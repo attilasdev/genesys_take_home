@@ -2,13 +2,10 @@ package com.take_home.tests;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import com.take_home.pages.LoginPage;
 
 
 public class ParallelDemoTest extends BaseTest {
-    private static final Logger logger = LoggerFactory.getLogger(ParallelDemoTest.class);
 
     @Test
     @DisplayName("Parallel Demo Test 1")
