@@ -37,4 +37,8 @@ public class LoginPage extends BasePage {
         logger.info("Opening URL: {}", url);
         driver.get(url);
     }
+
+    public WebElement getUsernameField() {
+        return usernameField;
+    }
 }   

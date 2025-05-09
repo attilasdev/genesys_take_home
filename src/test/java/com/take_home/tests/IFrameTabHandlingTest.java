@@ -26,16 +26,27 @@ public class IFrameTabHandlingTest extends BaseTest {
         GuruPage guruPage = new GuruPage();
         guruPage.open();
 
+        
+        takeScreenshot("guru99-homepage");
+
         try {
             logStep("Attempting to interact with iframe");
             guruPage.switchToIFrame();
             guruPage.clickIFrameImage();
 
+            
+            takeScreenshot("after-iframe-interaction");
+
             logStep("Handling new tab after iframe interaction");
             guruPage.waitForNewTabAndSwitch();
+            
+            
+            takeScreenshot("new-tab-view");
+            
             guruPage.closeCurrentTabAndSwitchToMain();
         } catch (Exception e) {
             logger.warn("Issue with iframe handling: {}", e.getMessage());
+            takeScreenshot("iframe-error");
         }
 
         logStep("Submitting email for validation");
@@ -44,14 +55,22 @@ public class IFrameTabHandlingTest extends BaseTest {
         logStep("Validating alert message");
         String alertText = guruPage.getAlertText();
         logValidation("Alert text contains 'Successfully'");
+        takeScreenshot("after-email-submit");
+        
         assertTrue(alertText.contains("Successfully"), "Alert should contain Successfully.");
 
         logStep("Navigating to tooltip page");
         guruPage.navigateToTooltipPage();
 
+        // Take screenshot of tooltip page
+        takeScreenshot("tooltip-page");
+
         logStep("Validating download button presence");
         logValidation("Download button is present on the page");
         assertTrue(guruPage.isDownloadButtonPresent(), "Download button should be present.");
+        
+        // Final state screenshot
+        takeScreenshot("test-complete");
     }
 
     @AfterEach
